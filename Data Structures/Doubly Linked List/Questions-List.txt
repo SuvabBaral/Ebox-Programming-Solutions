@@ -1,0 +1,811 @@
+PROBLEM
+DOUBLY LINKED LIST:MOVE LAST STUDENT TO FRONT
+Move Last Student to Front
+
+Write a C program to move last student to front in a doubly linked list.
+
+ 
+
+Define a structure
+struct student
+{
+  int id;
+  char name[10];
+  char gender[10];
+  struct student * prev;
+  struct student * next;
+};
+
+ 
+
+Include functions
+
+append() --- to add details of student to the end ofdoubly linked list.
+display() --- to display all the student's details in the doubly linked list.
+moveLastToFront() --- to move last student's details to front in the doubly linked list.
+
+[Note: Give spacing "%4s", "%10s", "%7s"  for "ID","Name","Gender" respectively]
+
+
+
+Input and Output Format:
+Refer sample input and output for formatting specifications.
+ 
+
+[All text in bold corresponds to input and the rest corresponds to output.]
+
+ 
+
+Sample Input and Output:
+
+Enter the id
+1
+Enter the name
+Ananthi
+Enter the gender
+Female
+Do you want to add details of another student? Type Yes/No
+Yes
+Enter the id
+2
+Enter the name
+Ajay
+Enter the gender
+Male
+Do you want to add details of another student? Type Yes/No
+Yes
+Enter the id
+3
+Enter the name
+Akash
+Enter the gender
+Male
+Do you want to add details of another student? Type Yes/No
+Yes
+Enter the id
+4
+Enter the name
+Diya
+Enter the gender
+Female
+Do you want to add details of another student? Type Yes/No
+Yes
+Enter the id
+5
+Enter the name
+Shilpa
+Enter the gender
+Female
+Do you want to add details of another student? Type Yes/No
+No
+The details of the students are
+  ID       Name  Gender
+   1    Ananthi  Female
+   2       Ajay    Male
+   3      Akash    Male
+   4       Diya  Female
+   5     Shilpa  Female
+The details of the students are after moving last student to front
+  ID       Name  Gender
+   5     Shilpa  Female
+   1    Ananthi  Female
+   2       Ajay    Male
+   3      Akash    Male
+   4       Diya  Female
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+2)
+
+
+PROBLEM
+DOUBLY LINKED LIST:ADD AT BEGINNING
+Doubly Linked List :Add at Beginning
+
+Write a C program to add details of students to the beginning of the doubly linked list.
+
+Define a structure
+struct student
+{
+  int id;
+  char name[10];
+  char gender[10];
+  struct student * prev;
+  struct student * next;
+};
+ 
+
+Include functions
+
+addatbeg() --- to add details of students to the beginning of doubly linked list.
+display() --- to display all the details of students in the doubly linked list.
+[Note: Give spacing "%4s", "%10s", "%7s"  for "ID","Name","Gender" respectively]
+ 
+Input and Output Format:
+
+Refer sample input and output for formatting specifications.
+
+[All text in bold corresponds to input and the rest corresponds to output.]
+
+ 
+
+Sample Input and Output 1:
+Enter the id
+
+1
+Enter the name
+Anjana
+Enter the gender
+Female
+Do you want to add details of another student? Type Yes/No
+Yes
+Enter the id
+2
+Enter the name
+Priya
+Enter the gender
+Female
+Do you want to add details of another student? Type Yes/No
+Yes
+Enter the id
+3
+Enter the name
+Fazil
+Enter the gender
+Male
+Do you want to add details of another student? Type Yes/No
+Yes
+Enter the id
+4
+Enter the name
+Uthraa
+Enter the gender
+Female
+Do you want to add details of another student? Type Yes/No
+No
+The details of the students are
+  ID       Name  Gender
+   4     Uthraa  Female
+   3      Fazil    Male
+   2      Priya  Female
+   1     Anjana  Female
+
+
+Sample Input and Output 2:
+
+Enter the id
+4
+Enter the name
+Sandhya
+Enter the gender
+Female
+Do you want to add details of another student? Type Yes/No
+Yes
+Enter the id
+3
+Enter the name
+Sahithya
+Enter the gender
+Female
+Do you want to add details of another student? Type Yes/No
+Yes
+Enter the id
+2
+Enter the name
+Akash
+Enter the gender
+Male
+Do you want to add details of another student? Type Yes/No
+Yes
+Enter the id
+1
+Enter the name
+Ananthi
+Enter the gender
+Female
+Do you want to add details of another student? Type Yes/No
+No
+The details of the students are
+  ID       Name  Gender
+   1    Ananthi  Female
+   2      Akash    Male
+   3   Sahithya  Female
+   4    Sandhya  Female
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+3)
+
+
+PROBLEM
+DOUBLY LINKED LIST:ADD AFTER PARTICULAR POSITION
+Doubly Linked List : Add after particular position
+
+Write a C program to add details of students after particular position in the doubly linked list.
+ 
+
+[Note: The First position of the student is zero]
+
+
+
+Define a structure
+struct student
+{
+  int id;
+  char name[10];
+  char gender[10];
+  struct student * prev;
+  struct student * next;
+};
+
+
+Include functions
+
+append() --- to add details of students to the doubly linked list.
+display() --- to display all the student's details in the list.
+addafter() --- to add a student after particular position in the doubly linked list
+[Note: Give spacing "%4s", "%10s", "%7s"  for "ID","Name","Gender" respectively]
+ 
+Input and Output Format:
+
+Refer sample input and output for formatting specifications.
+ 
+
+[All text in bold corresponds to input and the rest corresponds to output.]
+ 
+
+Sample Input and Output :
+
+Enter the id
+1
+Enter the name
+Avinash
+Enter the gender
+Male
+Do you want to add details of another student? Type Yes/No
+Yes
+Enter the id
+2
+Enter the name
+Arun
+Enter the gender
+Male
+Do you want to add details of another student? Type Yes/No
+Yes
+Enter the id
+3
+Enter the name
+Anu
+Enter the gender
+Female
+Do you want to add details of another student? Type Yes/No
+Yes
+Enter the id
+5
+Enter the name
+Priya
+Enter the gender
+Female
+Do you want to add details of another student? Type Yes/No
+No
+The details of the students are
+  ID       Name  Gender
+   1    Avinash    Male
+   2       Arun    Male
+   3        Anu  Female
+   5      Priya  Female
+Enter the position after which you want to add another node
+2
+Enter the id
+4
+Enter the name
+Aarthi
+Enter the gender
+Female
+The details of the students are
+  ID       Name  Gender
+   1    Avinash    Male
+   2       Arun    Male
+   3        Anu  Female
+   4     Aarthi  Female
+   5      Priya  Female
+Do you want to add details of another student after a certain position? Type Yes/No
+Yes
+Enter the position after which you want to add another node
+7
+Enter the id
+8
+Enter the name
+Fazil
+Enter the gender
+Male
+There are less than 7 students in the list
+The details of the students are
+  ID       Name  Gender
+   1    Avinash    Male
+   2       Arun    Male
+   3        Anu  Female
+   4     Aarthi  Female
+   5      Priya  Female
+Do you want to add details of another student after a certain position? Type Yes/No
+No
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+4)
+
+
+PROBLEM
+DOUBLY LINKED LIST : DELETE PARTICULAR STUDENT
+Doubly Linked List : Delete Particular Student
+
+Write a C program to delete particular student from the doubly linked list based on student name.
+
+
+Define a structure
+struct student
+{
+  int id;
+  char name[10];
+  char gender[10];
+  struct student * prev;
+  struct student * next;
+};
+ 
+
+Include functions
+
+append() --- to add details of students to the doubly linked list.
+
+delstud() --- to delete particular student from the list.
+
+display() --- to display all the student's details in the list.
+
+
+
+Input and Output Format:
+
+Refer sample input and output for formatting specifications.
+ 
+
+[Note: Give spacing "%4s", "%10s", "%7s"  for "ID","Name","Gender" respectively]
+[All text in bold corresponds to input and the rest corresponds to output.]
+
+ 
+
+Sample Input and Output:
+
+Enter the id
+1
+Enter the name
+Ananthi
+Enter the gender
+Female
+Do you want to add details of another student? Type Yes/No
+Yes
+Enter the id
+2
+Enter the name
+Anu
+Enter the gender
+Female
+Do you want to add details of another student? Type Yes/No
+Yes
+Enter the id
+3
+Enter the name
+Sanjay
+Enter the gender
+Male
+Do you want to add details of another student? Type Yes/No
+Yes
+Enter the id
+4
+Enter the name
+Vinay
+Enter the gender
+Male
+Do you want to add details of another student? Type Yes/No
+Yes
+Enter the id
+5
+Enter the name
+Yazhini
+Enter the gender
+Female
+Do you want to add details of another student? Type Yes/No
+No
+The details of the students are
+  ID           Name Gender
+   1        Ananthi Female
+   2            Anu Female
+   3         Sanjay   Male
+   4          Vinay   Male
+   5        Yazhini Female
+Enter the name of student to be deleted
+Sanjay
+The details of the students after deleting a student are
+  ID           Name Gender
+   1        Ananthi Female
+   2            Anu Female
+   4          Vinay   Male
+   5        Yazhini Female
+Do you want to delete details of another student? Type Yes/No
+Yes
+Enter the name of student to be deleted
+Vinay
+The details of the students after deleting a student are
+  ID           Name Gender
+   1        Ananthi Female
+   2            Anu Female
+   5        Yazhini Female
+Do you want to delete details of another student? Type Yes/No
+No
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+5)
+
+
+
+PROBLEM
+DOUBLY LINKED LIST : DELETE AT END
+Doubly Linked List : Delete at End
+
+Write a C program to delete details of students at the end of the doubly linked list.
+
+
+Define a structure
+struct student
+{
+  int id;
+  char name[10];
+  char gender[10];
+  struct student * prev;
+  struct student * next;
+};
+ 
+
+Include functions
+
+append() --- to add details of students to the doubly linked list.
+
+delatend() --- to delete details of students at the end
+
+display() --- to display all the details of students in the doubly linked list.
+
+
+
+Input and Output Format:
+
+Refer sample input and output for formatting specifications.
+ 
+
+[Note: Give spacing "%4s", "%10s", "%7s"  for "ID","Name","Gender" respectively]
+[All text in bold corresponds to input and the rest corresponds to output.]
+ 
+
+Sample Input and Output:
+
+Enter the id
+1
+Enter the name
+Avinash
+Enter the gender
+Male
+Do you want to add details of another student? Type Yes/No
+Yes
+Enter the id
+2
+Enter the name
+Aarthi
+Enter the gender
+Female
+Do you want to add details of another student? Type Yes/No
+Yes
+Enter the id
+3
+Enter the name
+Priya
+Enter the gender
+Female
+Do you want to add details of another student? Type Yes/No
+Yes
+Enter the id
+4
+Enter the name
+Yazhini
+Enter the gender
+Female
+Do you want to add details of another student? Type Yes/No
+Yes
+Enter the id
+5
+Enter the name
+Fazil
+Enter the gender
+Male
+Do you want to add details of another student? Type Yes/No
+No
+The details of the students are
+  ID           Name Gender
+   1        Avinash   Male
+   2         Aarthi Female
+   3          Priya Female
+   4        Yazhini Female
+   5          Fazil   Male
+The details of the students after deleting a student are
+  ID           Name Gender
+   1        Avinash   Male
+   2         Aarthi Female
+   3          Priya Female
+   4        Yazhini Female
+Do you want to delete details of another student? Type Yes/No
+No
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+6)
+
+
+
+PROBLEM
+DOUBLY LINKED LIST : DELETE AT BEGINNING
+Doubly Linked List : Delete at Beginning
+
+Write a C program to delete details of students at the beginning of the doubly linked list.
+
+
+Define a structure
+struct student
+{
+  int id;
+  char name[10];
+  char gender[10];
+  struct student * prev;
+  struct student * next;
+};
+
+Include functions
+
+append() --- to add details of students to the doubly linked list.
+
+delatbeg() --- to delete details of students from the beginning
+
+display() --- to display all the student's details in the doubly linked list.
+
+
+Input and Output Format:
+
+Refer sample input and output for formatting specifications.
+
+
+[Note: Give spacing "%4s", "%10s", "%7s"  for "ID","Name","Gender" respectively]
+[All text in bold corresponds to input and the rest corresponds to output.]
+
+ 
+
+Sample Input and Output 1:
+
+Enter the id
+1
+Enter the name
+Aarthi
+Enter the gender
+Female
+Do you want to add details of another student? Type Yes/No
+Yes
+Enter the id
+2
+Enter the name
+Preetha
+Enter the gender
+Female
+Do you want to add details of another student? Type Yes/No
+Yes
+Enter the id
+3
+Enter the name
+Janavi
+Enter the gender
+Female
+Do you want to add details of another student? Type Yes/No
+Yes
+Enter the id
+4
+Enter the name
+Riya
+Enter the gender
+Female
+Do you want to add details of another student? Type Yes/No
+No
+The details of the students are
+  ID       Name  Gender
+   1     Aarthi  Female
+   2    Preetha  Female
+   3     Janavi  Female
+   4       Riya  Female
+The details of the students after deleting a student are
+  ID       Name  Gender
+   2    Preetha  Female
+   3     Janavi  Female
+   4       Riya  Female
+Do you want to delete details of another student? Type Yes/No
+No
+
+
+
+Sample Input and Output 2:
+
+Enter the id
+1
+Enter the name
+Akash
+Enter the gender
+Male
+Do you want to add details of another student? Type Yes/No
+Yes
+Enter the id
+2
+Enter the name
+Reenu
+Enter the gender
+Female
+Do you want to add details of another student? Type Yes/No
+Yes
+Enter the id
+3
+Enter the name
+Ravi
+Enter the gender
+Male
+Do you want to add details of another student? Type Yes/No
+Yes
+Enter the id
+4
+Enter the name
+Uthraa
+Enter the gender
+Female
+Do you want to add details of another student? Type Yes/No
+No
+The details of the students are
+  ID       Name  Gender
+   1      Akash    Male
+   2      Reenu  Female
+   3      Kavin    Male
+   4     Uthraa  Female
+The details of the students after deleting a student are
+  ID       Name  Gender
+   2      Reenu  Female
+   3      Kavin    Male
+   4     Uthraa  Female
+Do you want to delete details of another student? Type Yes/No
+Yes
+The details of the students after deleting a student are
+  ID       Name  Gender
+   3      Kavin    Male
+   4     Uthraa  Female
+Do you want to delete details of another student? Type Yes/No
+No
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+7)
+
+
+
+PROBLEM
+ASCENDING ORDER DOUBLY LINKED LIST
+Ascending Order Doubly Linked List
+
+Write a C program to add details of student in an ascending order to doubly linked list based on the id.
+
+ 
+
+Define a structure
+struct student
+{
+  int id;
+  char name[10];
+  char gender[10];
+  struct student * prev;
+  struct student * next;
+};
+
+ 
+
+Include functions
+
+insert() --- to add details of student in an ascending order to doubly linked list.
+
+display() --- to display all the student's details in the doubly linked list.
+
+
+[Note: Give spacing "%4s", "%10s", "%7s"  for "ID","Name","Gender" respectively]
+
+Input and Output Format:
+Refer sample input and output for formatting specifications.
+
+
+[All text in bold corresponds to input and the rest corresponds to output.]
+
+
+
+Sample Input and Output:
+
+Enter the id
+1
+Enter the name
+Ananthi
+Enter the gender
+Female
+Do you want to add details of another student? Type Yes/No
+Yes
+Enter the id
+3
+Enter the name
+Anu
+Enter the gender
+Female
+Do you want to add details of another student? Type Yes/No
+Yes
+Enter the id
+2
+Enter the name
+Arun
+Enter the gender
+Male
+Do you want to add details of another student? Type Yes/No
+Yes
+Enter the id
+5
+Enter the name
+Keerthi
+Enter the gender
+Female
+Do you want to add details of another student? Type Yes/No
+Yes
+Enter the id
+4
+Enter the name
+Deepak
+Enter the gender
+Male
+Do you want to add details of another student? Type Yes/No
+NO
+The details of the students are
+  ID       Name  Gender
+   1    Ananthi  Female
+   2       Arun    Male
+   3        Anu  Female
+   4     Deepak    Male
+   5    Keerthi  Female
+
+
+
+
+
+
+
