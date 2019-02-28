@@ -1,0 +1,467 @@
+PROBLEM
+COMPLETE BINARY TREE AND TRAVERSALS
+Complete Binary Tree and Traversals
+
+Implement a C program to construct a Complete Binary Tree and also display the elements in the tree using Inorder , Preorder and Postorder traversals.
+
+ 
+
+A complete binary tree is a binary tree in which every level, except possibly the last, is completely filled, and all nodes are as far left as possible.
+
+
+Consider the following structure to create a binary tree
+struct tree
+{
+    int data;
+    struct tree *right,*left;
+};
+
+struct queue
+{
+    int front, rear;
+    int size;
+    struct tree* *array;
+};
+
+Function Specifications:
+struct tree* newNode(int data)
+struct queue* createQueue(int size)
+void enqueue(struct tree *root, struct queue* queue)
+struct tree* dequeue(struct queue* queue)
+void insert(struct tree **root, int data, struct queue* queue)
+void inorder(struct tree *)
+void preorder(struct tree *)
+void postorder(struct tree *)
+
+
+ 
+
+Input and Output Format:
+
+Refer Sample Input and Output for formatting specifications.
+
+ 
+
+[All text in bold corresponds to input and the rest corresponds to output]
+
+
+Sample Input and Output:
+
+Enter the element to be inserted in the tree
+
+1
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+2
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+3
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+4
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+5
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+6
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+7
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+8
+
+Do you want to insert another element?
+
+no
+
+Inorder Traversal : The elements in the tree are 8 4 2 5 1 6 3 7
+
+Preorder Traversal : The elements in the tree are 1 2 4 8 5 3 6 7
+
+Postorder Traversal : The elements in the tree are 8 4 5 2 6 7 3 1
+
+
+
+Function Definitions:
+
+void inorder (struct tree *) 
+void preorder (struct tree *) 
+void  postorder (struct tree *) 
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+2)
+
+
+
+
+PROBLEM
+COMPLETE BINARY TREE – CHILD SUM PROPERTY
+Complete Binary Tree – Child Sum Property
+
+Write a program to build a complete binary tree and to check if it satisfies the child sum property.
+
+Child Sum Property: For every non-leaf node, data value must be equal to sum of data values in left and right children.
+
+Consider the following structures to create a binary tree
+struct tree
+{
+    int data;
+    struct tree *right,*left;
+};
+
+struct queue
+{
+    int front, rear;
+    int size;
+    struct tree* *array;
+};
+ 
+
+Function Specifications:
+struct tree* newNode(int data)
+struct queue* createQueue(int size)
+void enqueue(struct tree *root, struct queue* queue)
+struct tree* dequeue(struct queue* queue)
+void insert(struct tree **root, int data, struct queue* queue)
+void levelOrder(struct tree* root)
+int isSumProperty(struct tree* node)
+
+The function levelOrder display the elements in the tree in level order.
+The function isSumProperty returns 1 if tree satisfies child sum property, otherwise returns 0.
+ 
+
+Input and Output Format:
+
+Refer Sample Input and Output for formatting specifications.
+
+ 
+
+[All text in bold corresponds to input and the rest corresponds to output]
+
+
+Sample Input and Output 1:
+
+Enter the number of elements in the tree
+
+6
+
+Enter the elements in the tree
+
+100
+
+50
+
+50
+
+25
+
+25
+
+50
+
+The elements in the tree in level order are 100 50 50 25 25 50
+The tree satisfies the children sum property
+
+ 
+
+ 
+
+Sample Input and Output 2:
+
+Enter the number of elements in the tree
+
+3
+
+Enter the elements in the tree
+
+50
+
+40
+
+20
+
+The elements in the tree in level order are 50 40 20
+
+The tree does not satisfy the children sum property
+
+
+
+Function Definitions:
+
+int isSumProperty (struct tree *root) 
+struct tree * newNode (int data) 
+void levelOrder (struct tree *) 
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+3)
+
+
+
+PROBLEM
+EXPRESSION TREE AND TRAVERSALS
+Implementation of expression tree and traversals
+
+Get the input postfix expression and construct an expression tree.
+
+Traverse the constructed Expression tree by Inorder, Preorder and Postorder methods.
+
+ [Note:- Each character corresponds to a number or an operator. Use only single digit numbers.]
+
+Create a structure
+struct tree
+{
+    char data;
+    struct tree *left;
+    struct tree *right;
+};
+
+Function specifications:
+struct tree * newnode(char b)
+void push(struct tree * temp)
+struct tree * pop()
+void inorder(struct tree * t)
+void preorder(struct tree * t)
+void postorder(struct tree * t)
+ 
+
+Input Format:
+
+Input a string in the form of postfix expression.
+
+Output Format:
+
+Print the output got while traversing the expression tree by Inorder, Preorder and Postorder traversal methods.
+ 
+
+Sample Input and Output:
+
+Enter the postfix expression:
+
+23*45/56+-*
+
+Inorder Traversal
+
+2 * 3 * 4 / 5 - 5 + 6
+
+Preorder Traversal
+
+* * 2 3 - / 4 5 + 5 6
+
+Postorder Traversal
+
+2 3 * 4 5 / 5 6 + - *
+
+
+
+Function Definitions:
+
+void push (struct tree *temp) 
+void inorder (struct tree *t) 
+void preorder (struct tree *t) 
+void postorder (struct tree *t) 
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+4)
+
+
+
+PROBLEM
+DETERMINE IF 2 TREES ARE IDENTICAL
+Determine if two trees are identical
+Implement a C program to find the two trees are identical or not.  Two trees are identical when they have same data and arrangement of data is also same.
+
+Consider the following structure to create a binary tree
+struct tree
+{
+    int data;
+    struct tree *right,*left;
+};
+
+struct queue
+{
+    int front, rear;
+    int size;
+    struct tree* *array;
+};
+
+
+Function Specifications:
+int identicalTrees(struct tree* a, struct tree* b)
+struct tree* newNode(int data)
+struct queue* createQueue(int size)
+void enqueue(struct tree *root, struct queue* queue)
+struct tree* dequeue(struct queue* queue)
+void insert(struct tree **root, int data, struct queue* queue)
+
+ 
+Input and Output Format:
+
+Refer Sample Input and Output for formatting specifications.
+
+ 
+
+[All text in bold corresponds to input and the rest corresponds to output]
+
+Sample Input and Output:
+
+Data to be inserted in 1st tree or 2nd tree?
+1
+Enter the element to be inserted in the 1st tree
+5
+Do you want to insert element?
+yes
+Data to be inserted in 1st tree or 2nd tree?
+1
+Enter the element to be inserted in the 1st tree
+9
+Do you want to insert element?
+yes
+Data to be inserted in 1st tree or 2nd tree?
+1
+Enter the element to be inserted in the 1st tree
+25
+Do you want to insert element?
+yes
+Data to be inserted in 1st tree or 2nd tree?
+2
+Enter the element to be inserted in the 2nd tree
+5
+Do you want to insert element?
+yes
+Data to be inserted in 1st tree or 2nd tree?
+2
+Enter the element to be inserted in the 2nd tree
+9
+Do you want to insert element?
+yes
+Data to be inserted in 1st tree or 2nd tree?
+2
+Enter the element to be inserted in the 2nd tree
+25
+Do you want to insert element?
+no
+Both tree are identical.
+ 
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+5)
+
+
+
+
+ROBLEM
+FIND THE MAXIMUM DEPTH OR HEIGHT OF THE TREE
+Find the maximum depth or height of the tree
+Implement a C program to find the maximum depth or height of the tree.
+
+
+Consider the following structure to create a binary tree 
+struct tree
+{
+    int data;
+    struct tree *right,*left;
+}; 
+
+struct queue
+{
+    int front, rear;
+    int size;
+    struct tree* *array;
+}; 
+
+
+Function Specifications: 
+int maxDepth(struct tree* node) 
+struct tree* newNode(int data) 
+struct queue* createQueue(int size) 
+void enqueue(struct tree *root, struct queue* queue) 
+struct tree* dequeue(struct queue* queue) 
+void insert(struct tree **root, int data, struct queue* queue) 
+
+
+Input and Output Format:
+
+Refer Sample Input and Output for formatting specifications.
+
+ 
+
+[All text in bold corresponds to input and the rest corresponds to output]
+
+
+
+Sample Input and Output:
+
+Enter the element to be inserted in the tree
+54
+Do you want to insert another element?
+yes
+Enter the element to be inserted in the tree
+47
+Do you want to insert another element?
+yes
+Enter the element to be inserted in the tree
+109
+Do you want to insert another element?
+yes 
+Enter the element to be inserted in the tree
+125
+Do you want to insert another element?
+no
+Hight of tree is 3
+ 
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

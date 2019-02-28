@@ -1,0 +1,1136 @@
+1)
+
+
+PROBLEM
+STACK 1 : ARRAY IMPLEMENTATION : PUSH AND POP
+Stack 1 : Array Implementation : Push and Pop
+
+ 
+
+Consider implementing a fixed size stack of maximum size 5 using an array.
+
+ 
+
+Create a structure
+
+ 
+
+struct stack {
+
+int a[5];
+
+int top;
+
+};
+
+ 
+
+Note :
+The array a holds the contents of the stack and the integer top stores the index of the element at the top of the stack.
+
+ 
+
+Write a program to implement push and pop operation on stack and to display the contents of the stack.
+
+ 
+
+In the initstack function intialize the value of top to -1.
+
+Print the message “Stack is full” in the push function when an attempt is made to push a data into a full stack.
+
+Print the message “Stack is empty” in the pop function and return the value -1000 when an attempt is made to pop data from an empty stack.
+
+ 
+
+Refer function specifications for further details.
+
+ 
+
+Input and Output Format:
+
+Refer sample input and output for formatting specifications.
+
+ 
+
+Note : 
+ The statement “The contents of the stack are” is in the main function.
+  In the display function, if the stack is empty, print “ {}”.
+
+ 
+
+[All text in bold corresponds to input and the rest corresponds to output]
+
+Sample Input and Output:
+
+ 
+
+Choice 1 : Push
+
+Choice 2 : Pop
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+1
+
+Enter the element to be pushed
+
+3
+
+Choice 1 : Push
+
+Choice 2 : Pop
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+3
+
+The contents of the stack are 3
+
+Choice 1 : Push
+
+Choice 2 : Pop
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+1
+
+Enter the element to be pushed
+
+5
+
+Choice 1 : Push
+
+Choice 2 : Pop
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+2
+
+The popped element is 5
+
+Choice 1 : Push
+
+Choice 2 : Pop
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+2
+
+The popped element is 3
+
+Choice 1 : Push
+
+Choice 2 : Pop
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+2
+
+Stack is empty
+
+Choice 1 : Push
+
+Choice 2 : Pop
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+1
+
+Enter the element to be pushed
+
+1
+
+Choice 1 : Push
+
+Choice 2 : Pop
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+1
+
+Enter the element to be pushed
+
+2
+
+Choice 1 : Push
+
+Choice 2 : Pop
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+1
+
+Enter the element to be pushed
+
+3
+
+Choice 1 : Push
+
+Choice 2 : Pop
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+1
+
+Enter the element to be pushed
+
+4
+
+Choice 1 : Push
+
+Choice 2 : Pop
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+1
+
+Enter the element to be pushed
+
+5
+
+Choice 1 : Push
+
+Choice 2 : Pop
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+1
+
+Enter the element to be pushed
+
+6
+
+Stack is full
+
+Choice 1 : Push
+
+Choice 2 : Pop
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+3
+
+The contents of the stack are 1 2 3 4 5
+
+Choice 1 : Push
+
+Choice 2 : Pop
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+2
+
+The popped element is 5
+
+Choice 1 : Push
+
+Choice 2 : Pop
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+3
+
+The contents of the stack are 1 2 3 4
+
+Choice 1 : Push
+
+Choice 2 : Pop
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+2
+
+The popped element is 4
+
+Choice 1 : Push
+
+Choice 2 : Pop
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+3
+
+The contents of the stack are 1 2 3
+
+Choice 1 : Push
+
+Choice 2 : Pop
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+5
+
+ 
+
+
+
+Function Definitions:
+
+void initstack (struct stack * p) 
+void push (struct stack * p, int item) 
+void display (struct stack p) 
+int pop (struct stack * p) 
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+2)
+
+
+
+PROBLEM
+STACK AS A LINKED LIST
+Stack as a Linked List
+
+ Write a menu driven program to implement stack as a linked list. Assume that the size of the stack is 5.
+
+ 
+
+Define a structure
+ 
+
+struct node { 
+    int data ;
+    struct node * link ;
+} ;
+ 
+
+ 
+
+Include functions:
+
+push --- to push an element into the stack.
+
+pop --- to pop an element from the stack. If the stack is empty, print No element in the stack
+
+display --- to display the elements in the stack
+
+count --- to count the number of elements in the stack
+
+Refer function specifications for further details.
+
+ 
+
+Input and Output Format:
+
+Get the choice of the function to be executed from the user:
+
+Choice 1 --- push
+
+Choice 2 --- pop
+
+Choice 3 --- display
+
+Choice 4 --- count
+
+Any other choice --- exit
+
+Choice 1: Enter the integer data to be pushed into the stack.
+
+Choice 2: No additional input
+
+Choice 3: No additional input
+
+Choice 4: No additional input
+
+ 
+
+
+Sample Input & Output:
+
+Choice 1 : To push data
+
+Choice 2 : To pop data
+
+Choice 3 : To display
+
+Choice 4 : To count
+
+ Enter your choice
+
+1
+
+Enter the data to be pushed
+
+34
+
+Enter your choice
+
+1
+
+Enter the data to be pushed
+
+23
+
+Enter your choice
+
+1
+
+Enter the data to be pushed
+
+55
+
+Enter your choice
+
+3
+
+Linked List Contents
+
+55 23 34 
+
+Enter your choice
+
+1
+
+Enter the data to be pushed
+
+89
+
+Enter your choice
+
+3
+
+Linked List Contents
+
+89 55 23 34 
+
+Enter your choice
+
+4
+
+Number of elements in the linked list is 4
+
+Enter your choice
+
+2
+
+Element Popped is 89
+
+Enter your choice
+
+3
+
+Linked List Contents
+
+55 23 34 
+
+Enter your choice
+
+2
+
+Element Popped is 55
+
+Enter your choice
+
+2
+
+Element Popped is 23
+
+Enter your choice
+
+4
+
+Number of elements in the linked list is 1
+
+Enter your choice
+
+2
+
+Element Popped is 34
+
+Enter your choice
+
+2
+
+No element in the stack
+
+Enter your choice
+
+4
+
+Number of elements in the linked list is 0
+
+Enter your choice
+
+3
+
+Linked List Contents
+
+ 
+
+Enter your choice
+
+6
+
+END
+
+
+
+Function Definitions:
+
+void push (struct node **, int ) 
+void display ( struct node * ) 
+int count (struct node *) 
+void pop (struct node **) 
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+3)
+
+
+
+
+PROBLEM
+PARENTHESES BALANCE
+Parentheses Balance
+You are given a string consisting of parentheses () and []. A string of this type is said to be correct:
+
+(a) if it is the empty string
+(b) if A and B are correct, AB is correct,
+(c) if A is correct, (A) and [A] is correct.
+Write a program that takes a sequence of strings of this type and check their correctness. Your program can assume that the maximum string length is 128.
+ 
+
+Consider implementing a dynamically sized stack using an array.
+
+ 
+
+Create a structure
+
+struct stack {
+
+    char *s;
+
+    int top;
+
+};
+
+ 
+
+In the initstack function intialize the value of top to -1.
+
+In the push function, push a character into the stack.
+In the pop function, pop a character from the stack.
+
+In the balancedornot function, display "Yes" if the parentheses balance otherwise display "No".
+
+Function Specifications:
+void initstack(struct stack * p);
+void push(struct stack *p, char item);
+char pop(struct stack *p);
+void balancedornot(struct stack p, char *par);
+
+
+
+Input Format
+First line of the input contains a positive integer n followed by n strings of parentheses () and [], one string a line.
+
+Output Format
+A sequence of Yes or No on the output file.
+
+Sample Input:
+
+3 
+([])
+(([()])))
+([()[]()])()
+
+Sample Output:
+Yes
+No
+Yes
+
+
+
+Function Definitions:
+
+void initstack (struct stack *p) 
+void push (struct stack *p, char) 
+char pop (struct stack *p) 
+void balancedornot (struct stack p, char *par) 
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+4)
+
+
+
+
+PROBLEM
+TOWER OF HANOI
+Iterative Tower of Hanoi
+Tower of Hanoi is a mathematical puzzle. It consists of three poles and a number of disks of different sizes which can slide onto any poles. The puzzle starts with the disk in a neat stack in ascending order of size in one pole, the smallest at the top thus making a conical shape. The objective of the puzzle is to move all the disks from one pole (say ‘source pole’) to another pole (say ‘destination pole’) with the help of third pole (say auxiliary pole).
+
+The puzzle has the following two rules:
+
+      1. You can’t place a larger disk onto smaller disk
+      2. Only one disk can be moved at a time
+
+Example:
+Number of disks = 3
+1
+                S                                 A                                 D
+
+When i=1, (i % 3 == 1) legal movement between 'S' and 'D'.
+2
+             S                                 A                                 D
+
+When i=2, (i % 3 == 2) legal movement between 'S' and 'A'.
+3
+               S                                 A                                 D
+
+When i=3, (i % 3 == 0) legal movement between 'A' and 'D'.
+4
+                S                                 A                                 D
+
+When i=4, (i % 3 == 1) legal movement between 'S' and 'D'.
+5
+               S                                 A                                 D
+
+When i=5, (i % 3 == 2) legal movement between 'S' and 'A'.
+6
+              S                                 A                                 D
+
+When i=6, (i % 3 == 0) legal movement between 'A' and 'D'.
+7
+              S                                 A                                 D
+
+When i=7, (i % 3 == 1) legal movement between 'S' and 'D'.
+8
+               S                                 A                                 D
+
+Total number of moves = 7
+ 
+
+Create a structure
+
+ 
+
+struct stack
+
+{
+
+    int * a;
+
+    int top;
+
+    int maxSize;
+
+};
+ 
+
+The structure stack has a pointer 'a' to a dynamically allocated array (used to hold the contents of the stack), an integer 'maxSize' that holds the size of this array (i.e the maximum number of data that can be held in this array) and an integer 'top' which stores the array index of the top element in the stack.
+
+ 
+
+Write a program to display the moves to move all the disks from one pole to another pole.
+
+In the initstack function intialize the value of top to -1 and initialize the value of maxSize.
+
+In the push function when an attempt is made to push a disk number into a full stack, just return.
+
+In the pop function and return INT_MIN when an attempt is made to pop a disk number from an empty stack.
+
+In the moveDisk function, display the legal movement between two Poles
+
+In the moveDisksBetweenTwoPoles function, pop and push the disks based on the rules and call the function moveDisk to display the legal movement between two Poles
+
+In the hanoiIterative function, iteratively call the function moveDiskBetweenTwoPoles based on the rules.
+
+Function Specifications:
+
+void initstack(struct stack * p, int maxSize)
+void push(struct stack * p, int item)
+int pop(struct stack * p)
+void moveDisk(char fromPeg, char toPeg, int disk)
+void moveDisksBetweenTwoPoles(struct stack *src, struct stack *dest, char s, char d)
+void hanoiIterative(struct stack *src, struct stack *aux, struct stack *dest, int no_of_disks)
+
+Input and Output Format:
+
+Refer sample input and output for formatting specifications.
+ 
+
+[All text in bold corresponds to input and the rest corresponds to output]
+
+
+Sample Input and Output:
+Enter the number of disks
+3
+
+Move the disk 1 from 'S' to 'D'
+Move the disk 2 from 'S' to 'A'
+Move the disk 1 from 'D' to 'A'
+Move the disk 3 from 'S' to 'D'
+Move the disk 1 from 'A' to 'S'
+Move the disk 2 from 'A' to 'D'
+Move the disk 1 from 'S' to 'D'
+
+
+ 
+
+
+
+Function Definitions:
+
+void initstack (struct stack *p, int maxSize) 
+void push (struct stack *p, int item) 
+int pop (struct stack *p) 
+void moveDisk (char, char, int) 
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+5)
+
+
+
+PROBLEM
+THE STOCK SPAN PROBLEM
+The Stock Span Problem
+The Stock Span Problem is a financial problem where we have a series of n daily price quotes for a stock and we need to calculate span of stock’s price for all n days.
+The span Si of the stock’s price on a given day i is defined as the maximum number of consecutive days just before the given day, for which the price of the stock on the current day is less than or equal to its price on the given day.
+
+The Span value of first element is always 1.
+
+For example, if an array of 7 days prices is given as {100, 80, 60, 70, 60, 75, 85}, then the span values for corresponding 7 days are {1, 1, 1, 2, 1, 4, 6}
+
+Write a program to calculate stock span values.
+
+HINT :
+
+Consider implementing a dynamically sized stack using an array.
+
+ 
+
+Create a structure
+
+ 
+
+struct stack
+
+{
+
+int * a;
+
+int top;
+
+int maxSize;
+
+};
+ 
+
+The structure stack has a pointer 'a' to a dynamically allocated array (used to hold the contents of the stack), an integer 'maxSize' that holds the size of this array (i.e the maximum number of data that can be held in this array) and an integer 'top' which stores the array index of the top element in the stack.
+
+ 
+
+In the initstack function intialize the value of top to -1 and initialize the value of maxSize.
+In the function calculateSpan, store the span values in an array span by following the below steps:
+
+Step1: Create a stack and push index of first element to it.
+
+Step2: Since the span value of first element is always 1, initialize the array span[0] to 1
+
+Step3: Calculate span values for rest of the elements by iteratively popping elements from stack while stack is not empty and top of stack is smaller then price[i]
+
+Step 4: If stack becomes empty, then price[i] is greater then all elements on left of it. Else price[i] is greater then elements after top of stack.
+
+Step 5 : Push the current element into the stack.
+
+
+In the display function, display the calculated span values.
+
+Function Specifications:
+
+void initstack(struct stack * p, int maxSize)
+void push(struct stack * p, int item)
+int pop(struct stack * p)
+void calculateSpan(int *price, int n, int *span)
+void printSpan(int *span, int n)
+
+ 
+
+Input and Output Format:
+
+Refer sample input and output for formatting specifications.
+
+ 
+
+[All text in bold corresponds to input and the rest corresponds to output]
+ 
+
+Sample Input and Output:
+
+Enter the number of days
+6
+Enter the stock prices
+10
+4
+5
+90
+120
+80
+Span values
+1 1 2 4 5 1
+
+
+
+Function Definitions:
+
+void initstack (struct stack *p, int n) 
+void push (struct stack *p, int item) 
+int pop (struct stack *p) 
+void printSpan (int *,int) 
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+6)
+
+
+
+PROBLEM
+EVALUATE AN EXPRESSION ENTERED IN POSTFIX FORM
+Evaluate an expression entered in postfix form
+
+Write a program to evaluate an expression entered in “postfix” form using stack concept.
+
+Function Specifications:
+
+void initpostfix(struct postfix * )
+void setexpr(struct postfix *, char *)
+void push(struct postfix *, int)
+int pop(struct postfix *)
+void calculate(struct postfix *)
+void show(struct postfix )
+
+ 
+
+Steps to be followed:
+
+Step:1
+
+create a structure named “postfix”. The structure should contain the following data members:
+
+   stack -an integer array of size 50, for performing stack operations(push and pop).
+   s -a string variable, to get the input infix expression.
+  nn -an integer variable, as a temporary variable, and finally to store the result.
+   top-an integer variable to store the top value of the stack.
+
+Step:2
+
+In the initpostfix function, the data members of the infix structure has to be initialized as follows:
+
+  assign top as '-1'.
+
+Step:3
+
+In the setexpr function, equate the input infix expression to s.
+
+Step:4
+
+In the push function,
+
+ increment top by 1.
+ add the passed integer in the top position.
+
+Step:5
+
+In the pop function,
+
+assign the element in the top position of the stack to an integer variable.
+Decrement top by 1.
+return the integer.
+
+Step:6
+
+In the calculate function,
+
+Start a while loop to parse the input string character by character ( using the condition “ *( p -> s ) ”).
+If digit is encountered, push it to the stack.
+If operator is encountered,
+pop two elements from the stack.
+do the operation according to the operator and store it in a variable.
+Push the variable to the stack.
+
+Step:7
+
+In the show function, print the result.
+
+Step:8
+
+In the main function,
+
+Call the initpostfix function.
+Get the postfix expression to be evaluated.
+Call the setexpr function.
+Then call the calculate function.
+Then display the result by calling the show function.
+End the main function.
+
+Input Output Format:
+Input consists of a string which corresponds to the postfix expression.
+Refer sample Input Output for formating.
+
+
+Sample input and output 1:
+Enter postfix expression to be evaluated:
+13+
+Result is: 4
+
+
+
+Function Definitions:
+
+void initpostfix (struct postfix *) 
+void setexpr (struct postfix *, char *) 
+void push (struct postfix *, int) 
+int pop (struct postfix *) 
+void calculate (struct postfix *) 
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+7)
+
+
+
+ PROBLEM
+				CORPORATE FIESTA
+Corporate Fiesta
+Corporate Fiesta is the first of its kind Carnival that has a unique blend of sports and arts, catering to varied interest of employees belonging to the Corporate companies of all sizes across the City. The Carnival had many events for different sections of employees.
+
+One notable event is a simple ball passing game called FORWARD and REVERSE organised for the smart Coders in the Corporate. In this event, the coders were given N passes and players having ids between 1 and 1000000. Initially some player with a given id had the ball in his possession. The coders had to make a program to display the id of the player who possessed the ball after exactly N passes.
+
+Description of the passes:
+There were two kinds of passes:
+1. F ID
+2. R
+
+Explanation :
+For the first kind of pass, the player in possession of the ball passes the ball to player with id=ID, while for the second kind of a pass, the player in possession of the ball passes the ball back to the player who had passed the ball to him.
+
+Note:
+It is guaranteed that the given order of all the passes will be a valid order .
+
+Input Format :
+The first line of the input contains two space separated integers N, the number of passes and ID of the player possessing the ball in the very beginning. (1=N=100000 and 1=ID=1000000)
+N lines follow describing the passes. ( for description of the passes, refer the statement above. )
+
+Output Format :
+Output to each test case should be a single line containing the "Player" ID (quotes for clarity) of the player who possesses the ball after N passes.
+Refer sample input and output for formatting specifications.
+
+Sample Input:
+10 23
+F 86
+F 63
+F 60
+R
+F 47
+R
+F 99
+F 9
+R
+R
+
+Sample Output:
+Player 9
+
+Explanation:
+Initially, Player having id=23 possesses the ball. After pass 1, Player having id=86 possesses the ball. After pass 2, Player having id=63 possesses the ball. After pass 3, Player having id=60 possesses the ball. After pass 4, Player having id=63 possesses the ball. After pass 5, Player having id=47 possesses the ball. After pass 6, Player having id=63 possesses the ball. After pass 7, Player having id=99 possesses the ball. After pass 8, Player having id=9 possesses the ball. After pass 9, Player having id=99 possesses the ball. After pass 10, Player having id=9 possesses the ball. So the output is 9.
+
+
+
+
+
+
+ 
+ 10/10 
+ 
+My Status
+PROBLEM
+CORPORATE FIESTA
+Corporate Fiesta
+Corporate Fiesta is the first of its kind Carnival that has a unique blend of sports and arts, catering to varied interest of employees belonging to the Corporate companies of all sizes across the City. The Carnival had many events for different sections of employees.
+
+One notable event is a simple ball passing game called FORWARD and REVERSE organised for the smart Coders in the Corporate. In this event, the coders were given N passes and players having ids between 1 and 1000000. Initially some player with a given id had the ball in his possession. The coders had to make a program to display the id of the player who possessed the ball after exactly N passes.
+
+Description of the passes:
+There were two kinds of passes:
+1. F ID
+2. R
+
+Explanation :
+For the first kind of pass, the player in possession of the ball passes the ball to player with id=ID, while for the second kind of a pass, the player in possession of the ball passes the ball back to the player who had passed the ball to him.
+
+Note:
+It is guaranteed that the given order of all the passes will be a valid order .
+
+Input Format :
+The first line of the input contains two space separated integers N, the number of passes and ID of the player possessing the ball in the very beginning. (1=N=100000 and 1=ID=1000000)
+N lines follow describing the passes. ( for description of the passes, refer the statement above. )
+
+Output Format :
+Output to each test case should be a single line containing the "Player" ID (quotes for clarity) of the player who possesses the ball after N passes.
+Refer sample input and output for formatting specifications.
+
+Sample Input:
+10 23
+F 86
+F 63
+F 60
+R
+F 47
+R
+F 99
+F 9
+R
+R
+
+Sample Output:
+Player 9
+
+Explanation:
+Initially, Player having id=23 possesses the ball. After pass 1, Player having id=86 possesses the ball. After pass 2, Player having id=63 possesses the ball. After pass 3, Player having id=60 possesses the ball. After pass 4, Player having id=63 possesses the ball. After pass 5, Player having id=47 possesses the ball. After pass 6, Player having id=63 possesses the ball. After pass 7, Player having id=99 possesses the ball. After pass 8, Player having id=9 possesses the ball. After pass 9, Player having id=99 possesses the ball. After pass 10, Player having id=9 possesses the ball. So the output is 9.
+
+
+ 
+ 10/10 
+ 
+My Status
+PROBLEM
+CORPORATE FIESTA
+Corporate Fiesta
+Corporate Fiesta is the first of its kind Carnival that has a unique blend of sports and arts, catering to varied interest of employees belonging to the Corporate companies of all sizes across the City. The Carnival had many events for different sections of employees.
+
+One notable event is a simple ball passing game called FORWARD and REVERSE organised for the smart Coders in the Corporate. In this event, the coders were given N passes and players having ids between 1 and 1000000. Initially some player with a given id had the ball in his possession. The coders had to make a program to display the id of the player who possessed the ball after exactly N passes.
+
+Description of the passes:
+There were two kinds of passes:
+1. F ID
+2. R
+
+Explanation :
+For the first kind of pass, the player in possession of the ball passes the ball to player with id=ID, while for the second kind of a pass, the player in possession of the ball passes the ball back to the player who had passed the ball to him.
+
+Note:
+It is guaranteed that the given order of all the passes will be a valid order .
+
+Input Format :
+The first line of the input contains two space separated integers N, the number of passes and ID of the player possessing the ball in the very beginning. (1=N=100000 and 1=ID=1000000)
+N lines follow describing the passes. ( for description of the passes, refer the statement above. )
+
+Output Format :
+Output to each test case should be a single line containing the "Player" ID (quotes for clarity) of the player who possesses the ball after N passes.
+Refer sample input and output for formatting specifications.
+
+Sample Input:
+10 23
+F 86
+F 63
+F 60
+R
+F 47
+R
+F 99
+F 9
+R
+R
+
+Sample Output:
+Player 9
+
+Explanation:
+Initially, Player having id=23 possesses the ball. After pass 1, Player having id=86 possesses the ball. After pass 2, Player having id=63 possesses the ball. After pass 3, Player having id=60 possesses the ball. After pass 4, Player having id=63 possesses the ball. After pass 5, Player having id=47 possesses the ball. After pass 6, Player having id=63 possesses the ball. After pass 7, Player having id=99 possesses the ball. After pass 8, Player having id=9 possesses the ball. After pass 9, Player having id=99 possesses the ball. After pass 10, Player having id=9 possesses the ball. So the output is 9.
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
