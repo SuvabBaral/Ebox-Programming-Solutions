@@ -1,0 +1,988 @@
+1)
+
+PROBLEM
+BINARY SEARCH TREE AND TRAVERSALS
+Binary Search Tree
+ 
+
+Implement a program to construct a Binary Search Tree and also display the elements in the tree using Inorder , Preorder and Postorder traversals.
+
+
+Create a structure
+
+ struct tnode {
+int data;
+struct tnode * leftc;
+struct tnode * rightc;
+};
+ 
+
+Binary Search tree is a binary tree in which each internal node x stores an element such that the element stored in the left subtree of x are less than x and elements stored in the right subtree of x are greater than or equal to x. This is called binary-search-tree property.
+
+ 
+
+Input and Output Format:
+
+Refer Sample Input and Output for formatting specifications.
+
+ 
+
+[All text in bold corresponds to input and the rest corresponds to output]
+
+
+
+Sample Input and Output:
+
+Enter the element to be inserted in the tree
+
+1
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+2
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+3
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+4
+
+Do you want to insert another element?
+
+no
+
+Inorder Traversal : The elements in the tree are 1 2 3 4
+
+Preorder Traversal : The elements in the tree are 1 2 3 4
+
+Postorder Traversal : The elements in the tree are 4 3 2 1
+
+ 
+
+
+
+Function Definitions:
+
+void insert (struct tnode **, int num) 
+void inorder (struct tnode * s) 
+void preorder (struct tnode * s) 
+void postorder (struct tnode * s) 
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+2)
+
+
+
+PROBLEM
+BST - SEARCH
+Binary Search Tree - Search
+
+ 
+
+Implement a C program to construct a Binary Search Tree, to search for an element in BST and to display the elements in the tree using Inorder traversals.
+
+ 
+
+Binary Search tree is a binary tree in which each internal node x stores an element such that the element stored in the left subtree of x are less than or equal to x and elements stored in the right subtree of x are greater than or equal to x. This is called binary-search-tree property.
+
+
+ 
+
+Input and Output Format:
+
+Refer Sample Input and Output for formatting specifications.
+
+ 
+
+[All text in bold corresponds to input and the rest corresponds to output]
+
+
+
+Sample Input and Output 1:
+
+Enter the element to be inserted in the tree
+
+1
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+2
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+3
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+4
+
+Do you want to insert another element?
+
+no
+
+Inorder Traversal : The elements in the tree are 1 2 3 4
+
+Enter the element to be searched
+
+6
+
+6 not found
+
+ 
+
+Sample Input and Output 2:
+
+Enter the element to be inserted in the tree
+
+1
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+2
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+3
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+3
+
+Do you want to insert another element?
+
+no
+
+Inorder Traversal : The elements in the tree are 1 2 3 4
+
+Enter the element to be searched
+
+3
+
+3 found
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+3)
+
+
+
+
+PROBLEM
+BST - DELETE
+Binary Search Tree - Delete
+
+ 
+
+Implement a C program to construct a Binary Search Tree, to delete an element in BST and to display the elements in the tree using Inorder traversals.
+
+ 
+
+Binary Search tree is a binary tree in which each internal node x stores an element such that the element stored in the left subtree of x are less than or equal to x and elements stored in the right subtree of x are greater than or equal to x. This is called binary-search-tree property.
+
+
+
+ 
+
+Input and Output Format:
+
+Refer Sample Input and Output for formatting specifications. If the data to be deleted is not present in the BST, print "Data to be deleted, not found".
+
+
+[Note: Enter any other choice to exit]
+
+[All text in bold corresponds to input and the rest corresponds to output]
+
+
+
+Sample Input and Output
+
+Binary Search Tree Implementation.
+
+ 
+
+Choice 1: Insert an element.
+
+Choice 2: Delete an element.
+
+Choice 3: Display.
+
+ 
+
+Enter your choice :
+
+3
+
+There are no elements in the BST.
+
+Enter your choice :
+
+2
+
+Enter the element to be deleted :
+
+12
+
+Tree is empty
+
+Enter your choice :
+
+1
+
+Enter the element to be inserted :
+
+4
+
+Enter your choice :
+
+1
+
+Enter the element to be inserted :
+
+10
+
+Enter your choice :
+
+1
+
+Enter the element to be inserted :
+
+3
+
+Enter your choice :
+
+3
+
+3 4 10
+
+Enter your choice :
+
+2
+
+Enter the element to be deleted :
+
+3
+
+Enter your choice :
+
+3
+
+4 10
+
+Enter your choice :
+
+1
+
+Enter the element to be inserted :
+
+12
+
+Enter your choice :
+
+1
+
+Enter the element to be inserted :
+
+45
+
+Enter your choice :
+
+3
+
+4 10 12 45
+
+Enter your choice :
+
+4
+
+ 
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+4)
+
+
+
+PROBLEM
+BST - LEAF NODES
+Binary Search Tree - Leaf Nodes
+
+
+Implement C program to find the number of leaf nodes in a BST
+
+
+
+Input and Output Format:
+
+Refer Sample Input and Output for formatting specifications.
+
+ 
+
+[All text in bold corresponds to input and the rest corresponds to output]
+
+
+
+Sample Input and Output:
+
+Enter the element to be inserted in the tree
+
+5
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+7
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+3
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+1
+
+Do you want to insert another element?
+
+no
+
+The elements in the tree are 1 3 5 7
+
+The number of leaf nodes in the tree is 2
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+5)
+
+
+
+PROBLEM
+BST - MAXIMUM DEPTH
+Binary Search Tree - Maximum Depth
+
+ 
+
+Implement a C program to find the maximum depth or height of a BST
+
+ 
+
+Input and Output Format:
+
+Refer Sample Input and Output for formatting specifications.
+
+ 
+
+[All text in bold corresponds to input and the rest corresponds to output]
+
+
+
+Sample Input and Output:
+
+ 
+
+Enter the element to be inserted in the tree
+
+5
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+7
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+3
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+1
+
+Do you want to insert another element?
+
+no
+
+The elements in the tree are 1 3 5 7
+
+The maximum depth of the tree is 3
+
+
+
+Function Definitions:
+
+int findMaxDepth (struct tnode * s) 
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+6)
+
+
+
+BST - SIZE
+Binary Search Tree - Size
+
+ 
+
+Implement a C program to find the size of the BST.
+
+ 
+
+Input and Output Format:
+
+Refer Sample Input and Output for formatting specifications.
+
+ 
+
+[All text in bold corresponds to input and the rest corresponds to output]
+
+
+
+Sample Input and Output:
+
+ 
+
+Enter the element to be inserted in the tree
+
+5
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+7
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+3
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+1
+
+Do you want to insert another element?
+
+no
+
+The elements in the tree are 1 3 5 7
+
+The size of the tree is 4
+
+
+
+Function Definitions:
+
+int findSize (struct tnode * s) 
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+7)
+
+
+PROBLEM
+BST - LEVEL ORDERED
+Binary Search Tree - Print Level Order
+
+ 
+
+Implement a C program to print the nodes in a BST in level order.
+
+
+ 
+
+Input and Output Format:
+
+Refer Sample Input and Output for formatting specifications.
+
+ 
+
+[All text in bold corresponds to input and the rest corresponds to output]
+
+
+
+Sample Input and Output:
+
+Enter the element to be inserted in the tree
+
+5
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+7
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+3
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+1
+
+Do you want to insert another element?
+
+no
+
+Inorder Traversal : The elements in the tree are 1 3 5 7
+
+The elements in the tree in level order are 5 3 7 1
+
+
+
+Function Definitions:
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+8)
+
+
+PROBLEM
+BST - DIAMETER
+Binary Search Tree - Diameter
+
+
+Implement a C program to find the diameter of a BST.
+
+The diameter of a tree (sometimes called the width) is the number of nodes on the longest path between two leaves in the tree.
+
+[Hint:
+
+The diameter of a tree T is the largest of the following quantities:
+
+the diameter of T’s left subtree
+
+the diameter of T’s right subtree
+
+the longest path between leaves that goes through the root of T (this can be computed from the heights of the subtrees of T)
+
+
+
+Input and Output Format:
+
+Refer Sample Input and Output for formatting specifications.
+
+ 
+
+[All text in bold corresponds to input and the rest corresponds to output]
+
+
+
+Sample Input and Output:
+
+Enter the element to be inserted in the tree
+
+5
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+7
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+3
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+1
+
+Do you want to insert another element?
+
+no
+
+The elements in the tree are 1 3 5 7
+
+The diameter of the tree is 4
+
+ 
+
+
+
+Function Definitions:
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+9)
+
+
+
+PROBLEM
+HEIGHT BALANCED BST
+Height Balanced BST
+
+ 
+
+Implement a C program to find whether a given Binary Search Tree is height balanced.
+
+ 
+
+Hint:
+
+A tree where no leaf is much farther away from the root than any other leaf. Different balancing schemes allow different definitions of “much farther” and different amounts of work to keep them balanced.
+
+ 
+
+Consider a height-balancing scheme where following conditions should be checked to determine if a binary tree is balanced.
+
+An empty tree is height-balanced. A non-empty binary tree T is balanced if:
+
+1) Left subtree of T is balanced
+
+2) Right subtree of T is balanced
+
+3) The difference between heights of left subtree and right subtree is not more than 1.]
+
+ 
+
+Input and Output Format:
+
+Refer Sample Input and Output for formatting specifications.
+
+ 
+
+[All text in bold corresponds to input and the rest corresponds to output]
+
+
+
+Sample Input and Output 1:
+
+Enter the element to be inserted in the tree
+
+5
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+3
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+2
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+10
+
+Do you want to insert another element?
+
+no
+
+The elements in the tree are 2 3 5 10
+
+The tree is height balanced
+
+ 
+
+ 
+
+Sample Input and Output 2:
+
+Enter the element to be inserted in the tree
+
+5
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+3
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+2
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+1
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+10
+
+Do you want to insert another element?
+
+no
+
+The elements in the tree are 1 2 3 5 10
+
+The tree is not height balanced
+
+ 
+
+
+
+Function Definitions:
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+10)
+
+
+
+
+PROBLEM
+PRINT ALL ROOT TO LEAF PATHS
+Print all  root to leaf paths in the binary search tree
+
+
+Implement a C program to print all the root to leaf paths in the binary search tree.
+
+ 
+
+Input and Output Format:
+
+Refer Sample Input and Output for formatting specifications.
+ 
+
+[All text in bold corresponds to input and the rest corresponds to output]
+
+
+
+Sample Input and Output 1:
+Enter the element to be inserted
+8
+Do you want to insert another element
+Yes
+Enter the element to be inserted
+5
+Do you want to insert another element
+Yes
+Enter the element to be inserted
+10
+Do you want to insert another element
+Yes
+Enter the element to be inserted
+4
+Do you want to insert another element
+Yes
+Enter the element to be inserted
+7
+Do you want to insert another element
+No
+The elements are 4 5 7 8 10
+Paths from root to leaf node:
+8 5 4
+8 5 7
+8 10
+
+
+Sample Input and Output 2:
+Enter the element to be inserted
+15
+Do you want to insert another element
+Yes
+Enter the element to be inserted
+10
+Do you want to insert another element
+Yes
+Enter the element to be inserted
+20
+Do you want to insert another element
+Yes
+Enter the element to be inserted
+5
+Do you want to insert another element
+Yes
+Enter the element to be inserted
+12
+Do you want to insert another element
+Yes
+Enter the element to be inserted
+17
+Do you want to insert another element
+Yes
+Enter the element to be inserted
+30
+Do you want to insert another element
+Yes
+Enter the element to be inserted
+18
+Do you want to insert another element
+No
+The elements are 5 10 12 15 17 18 20 30
+Paths from root to leaf node:
+15 10 5
+15 10 12
+15 20 17 18
+15 20 30
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

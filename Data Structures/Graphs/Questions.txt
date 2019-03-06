@@ -1,0 +1,395 @@
+1)
+
+
+
+GRAPH REPRESENTATIONS - MATRIX
+Graph Representations
+ 
+The First step of graph is representing the nodes and edges in the matrix form.
+Write a program to obtain the adjacency matrix representation of a graph .
+ 
+Input and Output Format:
+Refer sample input and output for formatting specifications.
+
+[All text in bold corresponds to input and the rest corresponds to output]
+
+
+Sample Input and Output 1:
+Please enter the number of nodes in the graph
+4
+Please enter the number of edges in the graph
+4
+Is the graph directed
+no
+Enter the start node, end node and weight of edge no 0
+0 1 7
+Enter the start node, end node and weight of edge no 1
+2 3 5
+Enter the start node, end node and weight of edge no 2
+1 2 3
+Enter the start node, end node and weight of edge no 3
+3 0 6
+Adjacency Matrix Representation:
+0 7 0 6
+7 0 3 0
+0 3 0 5
+6 0 5 0
+
+Sample Input and Output 2:
+Please enter the number of nodes in the graph
+4
+Please enter the number of edges in the graph
+3
+Is the graph directed
+yes
+Enter the start node, end node and weight of edge no 0
+0 1 3
+Enter the start node, end node and weight of edge no 1
+0 2 4
+Enter the start node, end node and weight of edge no 2
+1 2 5
+Adjacency Matrix Representation:
+0 3 4 0
+0 0 5 0
+0 0 0 0
+0 0 0 0
+ 
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2)
+
+
+PROBLEM
+GRAPH REPRESENTATIONS - LL
+Graph – Representations
+ 
+
+Write a program to obtain the adjacency list representation of a graph from its adjacency matrix representation.
+
+
+ 
+
+Input and Output Format:
+
+Refer sample input and output for formatting specifications.
+
+ 
+
+[All text in bold corresponds to input and the rest corresponds to output]
+
+
+
+Sample Input and Output 1:
+
+Please enter the number of nodes in the graph
+
+4
+
+Please enter the number of edges in the graph
+
+4
+
+Is the graph directed
+
+no
+
+Enter the start node, end node and weight of edge no 0
+
+0 1 7
+
+Enter the start node, end node and weight of edge no 1
+
+2 3 5
+
+Enter the start node, end node and weight of edge no 2
+
+1 2 4
+
+Enter the start node, end node and weight of edge no 3
+
+3 0 6
+
+Adjacency Matrix Representation:
+
+0 7 0 6
+
+7 0 4 0
+
+0 4 0 5
+
+6 0 5 0
+
+Adjacency List Representation:
+
+Node 0 is connected to the following nodes:
+
+Node 1 with edge weight 7
+
+Node 3 with edge weight 6
+
+Node 1 is connected to the following nodes:
+
+Node 0 with edge weight 7
+
+Node 2 with edge weight 4
+
+Node 2 is connected to the following nodes:
+
+Node 1 with edge weight 4
+
+Node 3 with edge weight 5
+
+Node 3 is connected to the following nodes:
+
+Node 0 with edge weight 6
+
+Node 2 with edge weight 5
+
+
+ 
+
+Sample Input and Output 2:
+
+Please enter the number of nodes in the graph
+
+4
+
+Please enter the number of edges in the graph
+
+3
+
+Is the graph directed
+
+yes
+
+Enter the start node, end node and weight of edge no 0
+
+0 1 3
+
+Enter the start node, end node and weight of edge no 1
+
+0 2 4
+
+Enter the start node, end node and weight of edge no 2
+
+1 2 5
+
+Adjacency Matrix Representation:
+
+0 3 4 0
+
+0 0 5 0
+
+0 0 0 0
+
+0 0 0 0
+
+Adjacency List Representation:
+
+Node 0 is connected to the following nodes:
+
+Node 1 with edge weight 3
+
+Node 2 with edge weight 4
+
+Node 1 is connected to the following nodes:
+
+Node 2 with edge weight 5
+
+
+
+Function Definitions:
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+3)
+
+
+PROBLEM
+DEPTH FIRST TRAVERSAL - DFT
+Depth first search
+
+
+ Write a program to implement Depth First Traversal for a given graph
+
+Input and Output Format:
+Refer Sample Input and Output.
+ 
+
+Sample Input and Output 1:
+Enter the number of nodes in the graph
+4
+Enter the number of edges in the graph
+5
+Is the graph directed(yes/no)
+no
+Enter the start node, end node and weight of edge no 0
+0 1 4
+Enter the start node, end node and weight of edge no 1
+0 3 6
+Enter the start node, end node and weight of edge no 2
+1 2 2
+Enter the start node, end node and weight of edge no 3
+1 3 1
+Enter the start node, end node and weight of edge no 4
+2 3 5
+Adjacency Matrix Representation:
+0 4 0 6
+4 0 2 1
+0 2 0 5
+6 1 5 0
+Adjacency List Representation:
+Node 0 is connected to the following nodes:
+Node 1 with edge weight 4
+Node 3 with edge weight 6
+Node 1 is connected to the following nodes:
+Node 0 with edge weight 4
+Node 2 with edge weight 2
+Node 3 with edge weight 1
+Node 2 is connected to the following nodes:
+Node 1 with edge weight 2
+Node 3 with edge weight 5
+Node 3 is connected to the following nodes:
+Node 0 with edge weight 6
+Node 1 with edge weight 1
+Node 2 with edge weight 5
+Enter the starting node / vertex for depth first traversal
+0
+Depth First Traversal starting from node 0
+0 1 2 3
+
+
+
+Sample Input and Output 2:
+Enter the number of nodes in the graph
+4
+Enter the number of edges in the graph
+5
+Is the graph directed(yes/no)
+yes
+Enter the start node, end node and weight of edge no 0
+0 1 4
+Enter the start node, end node and weight of edge no 1
+0 3 6
+Enter the start node, end node and weight of edge no 2
+2 1 2
+Enter the start node, end node and weight of edge no 3
+1 3 1
+Enter the start node, end node and weight of edge no 4
+3 2 5
+Adjacency Matrix Representation:
+0 4 0 6
+0 0 0 1
+0 2 0 0
+0 0 5 0
+Adjacency List Representation:
+Node 0 is connected to the following nodes:
+Node 1 with edge weight 4
+Node 3 with edge weight 6
+Node 1 is connected to the following nodes:
+Node 3 with edge weight 1
+Node 2 is connected to the following nodes:
+Node 1 with edge weight 2
+Node 3 is connected to the following nodes:
+Node 2 with edge weight 5
+Enter the starting node / vertex for depth first traversal
+0
+Depth First Traversal starting from node 0
+0 1 3 2
+ 
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+4)
+
+
+
+PROBLEM
+BREADTH FIRST TRAVERSAL - BFT
+Breadth First Traversal
+
+
+ Write a program to implement Breadth First Traversal for a given graph
+
+
+Input and Output Format:
+
+Refer sample input and output for formatting specifications.
+
+ 
+
+[All text in bold corresponds to input and the rest corresponds to output]
+
+
+Sample Input and Output 1:
+
+Enter the number of nodes in the graph
+4
+Enter the number of edges in the graph
+5
+Is the graph directed(yes/no)
+no
+Enter the start node and end node of edge no 0
+0 1
+Enter the start node and end node of edge no 1
+0 3
+Enter the start node and end node of edge no 2
+1 2
+Enter the start node and end node of edge no 3
+1 3
+Enter the start node and end node of edge no 4
+2 3
+Enter the starting node / vertex for breadth first traversal
+0
+Breadth First Traversal starting from node 0
+0 1 3 2
+
+
+Sample Input and Output 2:
+Enter the number of nodes in the graph
+4
+Enter the number of edges in the graph
+5
+Is the graph directed(yes/no)
+yes
+Enter the start node and end node of edge no 0
+0 1
+Enter the start node and end node of edge no 1
+3 0
+Enter the start node and end node of edge no 2
+1 2
+Enter the start node and end node of edge no 3
+1 3
+Enter the start node and end node of edge no 4
+3 2
+Enter the starting node / vertex for breadth first traversal
+0
+Breadth First Traversal starting from node 0
+0 1 2 3
+
+
+
+Function Definitions:
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
